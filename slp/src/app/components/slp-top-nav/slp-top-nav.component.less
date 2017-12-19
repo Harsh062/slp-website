@@ -1,0 +1,100 @@
+.home-page-navbar {
+    background-color: #3B3B3B;
+    z-index: 1;
+    margin: 0 auto;
+    width: 960px;
+
+    a {
+        color: white;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.arrow {
+        background-image: url(../../../assets/images/bottom_arrow.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+}
+
+.navbar-collapse {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+ul.nav.navbar-nav {
+    li {
+        text-align: center;
+        font-weight: bold;
+        font-style: normal;
+        background-color: #3B3B3B;
+        border-style: solid;
+        border-color: #505050;
+        border-width: 1px 0 0 1px;
+        border-radius: 0;
+
+        &:hover {
+            background-color: red;
+        }
+    }
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.courses-dropdown {
+    width: 300px;
+}
+
+.students-dropdown {
+    width: 200px;
+}
+
+.aboutUs-dropdown {
+    width: 200px;
+}
+
+.courses-dropdown, .students-dropdown, .aboutUs-dropdown {
+    margin-left: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+
+    a {
+        text-align: left;
+        color: white;
+        padding: 5px 5px;
+        text-decoration: none;
+        display: block;
+        border-style: solid;
+        border-color: #4C4C4C;
+        border-width: 1px 0 0 1px;
+        border-radius: 0;
+        box-shadow: none;
+        background-color: #3C3C3C;
+
+        &:hover {
+            background-color: #4598C6;
+            cursor: pointer;
+        }
+    }
+}
+
+.dropdown:hover .courses-dropdown, .dropdown:hover .students-dropdown,.dropdown:hover .aboutUs-dropdown {
+    display: block;
+}

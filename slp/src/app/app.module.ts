@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { SlpTopNavComponent } from './components/slp-top-nav/slp-top-nav.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SlpTopNavComponent
   ],
   imports: [
     BrowserModule
