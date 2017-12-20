@@ -1,5 +1,11 @@
-
-    <header class="row" id="header-wrapper">
+    <header class="row" id="brand-logo-wrapper">
+        <div id="logo">
+            <a>
+                <img src="../../../assets/images/facebook.png" alt="Vibrant Academy" width="443" height="83" border="0">
+            </a>
+        </div>
+    </header>
+    <header class="row" id="content-header-wrapper">
         <nav class="navbar navbar-default home-page-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -14,7 +20,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="home-page-navbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">HOME</a></li>
+                    <li><a [routerLink]="['/home']">HOME</a></li>
                     <li class="dropdown"><a class="dropbtn">COURSES</a>
                       <div class="courses-dropdown">
                           <a id="mega">Mega (For XI to XII moving students)</a>
@@ -47,16 +53,12 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="./views/contacts/contacts.html">CONTACT</a></li>
+                    <li><a [routerLink]="['/contact']">CONTACT</a></li>
                 </ul>
                 <ul class="nav navbar-nav" id="social">
                         <li>
                             <a href="https://www.facebook.com/Stimulus-Learning-Point-321070051402291/">
                             <img src="../../../assets/images/facebook.png" alt="Facebook" width="25" height="25" border="0"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCiGpAU6F3DeBmLbs6J8pvjg">
-                            <img src="../../../assets/images/you-tube.png" alt="You Tube" width="25" height="25" border="0"></a>
                         </li>
                 </ul>
             </div>

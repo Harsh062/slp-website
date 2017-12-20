@@ -11,5 +11,21 @@
 </head>
 <body>
   <app-root></app-root>
+  <script>
+   function initMap() {
+    var uluru = {lat: 20.707055, lng: 76.565967};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 18,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs0BJlms-SFa-EO-JN_ETVeN9Xqv1AD1k&callback=initMap">
+  </script>
 </body>
 </html>
