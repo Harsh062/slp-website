@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 import "./globals.css";
 import Footer from "./components/Footer"; // Adjust the path based on your folder structure
@@ -33,17 +34,19 @@ export default function RootLayout({ children }) {
       >
         <header className="header">
           <nav className="navbar">
-            <Image
-              src="/logo/slp1.png"
-              alt="Stimulus Learning Point Logo"
-              width={160}
-              height={60}
-              className="logo"
-            />
+            <Link href="/">
+              <Image
+                src="/logo/slp1.png"
+                alt="Stimulus Learning Point Logo"
+                width={160}
+                height={60}
+                className="logo"
+              />
+            </Link>
 
             <div className="nav-items">
-              <a href="#results">Results</a>
-              <a href="#gallery">Gallery</a>
+              <a href="/results">Results</a>
+              <a href="/gallery">Gallery</a>
               <a href="#about">About Us</a>
               <a href="#contact">Contact Us</a>
             </div>

@@ -29,6 +29,7 @@ const ResultsCarousel = () => {
     "result3.jpeg",
     "result4.jpeg",
     "result5.jpeg",
+    "promo.jpeg",
   ];
 
   return (

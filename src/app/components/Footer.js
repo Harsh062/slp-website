@@ -46,6 +46,22 @@ const Footer = () => {
             <br />
             Balaji Plots, Khamgaon
           </p>
+          <div className="footer-youtube-cta">
+            <a
+              href="https://www.youtube.com/@StimulusLearningPoint"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="youtube-link"
+            >
+              <Image
+                src="/youtube-v2.jpg" // make sure to place a small SVG or PNG icon
+                alt="YouTube"
+                width={24}
+                height={24}
+              />
+              <span>Watch Us on YouTube</span>
+            </a>
+          </div>
         </div>
       </div>
 

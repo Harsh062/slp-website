@@ -569,3 +569,21 @@ button:not(.dot) {
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+.footer-youtube-cta {
+  margin-top: 20px;
+}
+
+.youtube-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.youtube-link:hover {
+  color: var(--accent-color);
+}
