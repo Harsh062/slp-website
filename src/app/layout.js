@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
+
 import "./globals.css";
+import Footer from "./components/Footer"; // Adjust the path based on your folder structure
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,10 +22,52 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="header">
+          <nav className="navbar">
+            <Image
+              src="/logo/slp1.png"
+              alt="Stimulus Learning Point Logo"
+              width={160}
+              height={60}
+              className="logo"
+            />
+
+            <div className="nav-items">
+              <a href="#results">Results</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#about">About Us</a>
+              <a href="#contact">Contact Us</a>
+            </div>
+          </nav>
+        </header>
+
         {children}
+
+        <Footer />
+
+        <a
+          href="https://wa.me/919422926950?text=I'm%20interested%20in%20SLP%20courses"
+          className="whatsapp-float"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/whatsapp_transparent.png" // update if your filename is different
+            alt="Chat on WhatsApp"
+            width={80}
+            height={80}
+            className="whatsapp-icon"
+          />
+        </a>
       </body>
     </html>
   );
