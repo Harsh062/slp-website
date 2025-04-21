@@ -22,7 +22,7 @@ const stats = [
     ),
   },
   {
-    title: "1000+",
+    title: "3000+",
     subtitle: "Students Nurtured",
     logo: (
       <svg
