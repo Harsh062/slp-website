@@ -587,3 +587,47 @@ button:not(.dot) {
 .youtube-link:hover {
   color: var(--accent-color);
 }
+
+/* Hamburger toggle (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 70px;
+    right: 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    z-index: 1000;
+  }
+
+  .nav-items.open {
+    display: flex;
+  }
+
+  .nav-items a {
+    padding: 8px 0;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+
+  .navbar {
+    position: relative;
+  }
+}
