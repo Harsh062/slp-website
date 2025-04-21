@@ -76,18 +76,23 @@ button:not(.dot) {
   position: relative;
 }
 
-.carousel-arrow {
+button.carousel-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 28px;
-  background: rgba(0, 0, 0, 0.3);
+  font-size: 16px; /* Was 28px */
+  background: rgba(0, 0, 0, 0.15);
   color: white;
   border: none;
-  padding: 12px;
+  padding: 6px 10px; /* Reduced padding */
   border-radius: 50%;
   cursor: pointer;
   z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+button.carousel-arrow:hover {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .left-arrow {
@@ -96,10 +101,6 @@ button:not(.dot) {
 
 .right-arrow {
   right: 10px;
-}
-
-.carousel-arrow:hover {
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .featured-slider .keen-slider__slide img {
@@ -588,19 +589,40 @@ button:not(.dot) {
   color: var(--accent-color);
 }
 
-/* Hamburger toggle (hidden on desktop) */
-.hamburger {
+button.hamburger {
   display: none;
-  font-size: 28px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 18px;
   background: none;
   border: none;
+  padding: 0;
   cursor: pointer;
-  color: var(--primary-color);
+}
+
+button.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--primary-color);
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+/* Hide arrows on desktop, show on mobile */
+.mobile-arrows {
+  display: none;
 }
 
 @media (max-width: 768px) {
-  .hamburger {
+  button.hamburger {
     display: block;
+  }
+
+  .testimonial-thumbnails {
+    display: none;
   }
 
   .nav-items {
@@ -629,5 +651,31 @@ button:not(.dot) {
 
   .navbar {
     position: relative;
+  }
+
+  .mobile-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .mobile-arrows button {
+    width: 36px;
+    height: 36px;
+    background: rgba(0, 0, 0, 0.15);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-arrows button:hover {
+    background: rgba(0, 0, 0, 0.3);
   }
 }

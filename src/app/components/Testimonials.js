@@ -97,50 +97,56 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
+      {/* Mobile Arrows */}
+      <div className="mobile-arrows">
+        <button onClick={() => featuredSlider.current?.prev()}>&larr;</button>
+        <button onClick={() => featuredSlider.current?.next()}>&rarr;</button>
+      </div>
+      <div className="testimonial-thumbnails">
+        {/* Thumbnails Carousel (Bottom) */}
+        <div ref={thumbRef} className="keen-slider testimonial-grid">
+          {testimonials.map((t, index) => (
+            <div className="keen-slider__slide testimonial-card" key={index}>
+              <p className="testimonial-text">
+                {t.text.length > 160 ? t.text.slice(0, 160) + "..." : t.text}
+              </p>
 
-      {/* Thumbnails Carousel (Bottom) */}
-      <div ref={thumbRef} className="keen-slider testimonial-grid">
-        {testimonials.map((t, index) => (
-          <div className="keen-slider__slide testimonial-card" key={index}>
-            <p className="testimonial-text">
-              {t.text.length > 160 ? t.text.slice(0, 160) + "..." : t.text}
-            </p>
+              <div className="testimonial-footer">
+                <Image
+                  src={t.image}
+                  alt={t.name}
+                  width={64}
+                  height={64}
+                  className="testimonial-avatar"
+                />
 
-            <div className="testimonial-footer">
-              <Image
-                src={t.image}
-                alt={t.name}
-                width={64}
-                height={64}
-                className="testimonial-avatar"
-              />
-
-              <div>
-                <p className="testimonial-name">{t.name}</p>
-                <p className="testimonial-course">{t.course}</p>
+                <div>
+                  <p className="testimonial-name">{t.name}</p>
+                  <p className="testimonial-course">{t.course}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      {/* Dots below bottom carousel */}
-      <div className="dots">
-        {Array.from({
-          length: Math.ceil(testimonials.length / 3),
-        }).map((_, idx) => (
-          <button
-            key={idx}
-            className={`dot ${
-              Math.floor(currentSlide / 3) === idx ? "active" : ""
-            }`}
-            onClick={() => {
-              featuredSlider.current?.moveToSlideRelative(idx * 3);
-              thumbSlider.current?.moveToSlideRelative(idx * 3);
-              setCurrentSlide(idx * 3);
-            }}
-          />
-        ))}
+        {/* Dots below bottom carousel */}
+        <div className="dots">
+          {Array.from({
+            length: Math.ceil(testimonials.length / 3),
+          }).map((_, idx) => (
+            <button
+              key={idx}
+              className={`dot ${
+                Math.floor(currentSlide / 3) === idx ? "active" : ""
+              }`}
+              onClick={() => {
+                featuredSlider.current?.moveToSlideRelative(idx * 3);
+                thumbSlider.current?.moveToSlideRelative(idx * 3);
+                setCurrentSlide(idx * 3);
+              }}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

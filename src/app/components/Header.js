@@ -24,7 +24,9 @@ export default function Header() {
           className="hamburger"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
-          ☰
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
 
         <div className={`nav-items ${menuOpen ? "open" : ""}`}>
