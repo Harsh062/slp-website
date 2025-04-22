@@ -14,7 +14,7 @@ const testimonials = [
   {
     name: "Zainab Gulzar",
     course: "NEET 2021 (KEM Mumbai)",
-    image: "/testimonials/zainab_gulzar.png",
+    image: "/testimonials/zainab_gulzar.jpeg",
     text: "The Best you can get in Khamgaon. Good team. Good teachers, very helping and inspiring",
   },
   {
@@ -26,7 +26,7 @@ const testimonials = [
   {
     name: "Harsh Sharma",
     course: "JEE/MHT-CET 2023 (VJTI Mumbai)",
-    image: "/testimonials/harsh_sharma.png",
+    image: "/testimonials/harsh_sharma.jpeg",
     text: "Best you can get in Buldana district .Dedicated faculties. Best environment for serious aspirants. Guidance by the mentors are very helpful throughout my journey. #ProudSLPite",
   },
   {

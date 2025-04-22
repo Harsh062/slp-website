@@ -46,6 +46,18 @@ const resultImages = [
     name: "Gallery Image",
     imgSrc: "gallery9.jpeg",
   },
+  {
+    name: "Gallery Image",
+    imgSrc: "gallery10.jpeg",
+  },
+  {
+    name: "Gallery Image",
+    imgSrc: "gallery11.jpeg",
+  },
+  {
+    name: "Gallery Image",
+    imgSrc: "gallery12.jpeg",
+  },
 ];
 
 export default function ResultsPage() {

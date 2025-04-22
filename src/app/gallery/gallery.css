@@ -38,3 +38,14 @@
   object-fit: cover;
   display: block;
 }
+
+@media (max-width: 768px) {
+  .gallery-card img {
+    height: auto; /* Let height be based on image aspect ratio */
+    object-fit: contain; /* Ensure full image is shown */
+  }
+
+  .gallery-card {
+    width: 100%; /* Let card take full width on mobile */
+  }
+}
