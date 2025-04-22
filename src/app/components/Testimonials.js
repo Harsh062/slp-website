@@ -201,8 +201,8 @@ const Testimonials = () => {
                 Math.floor(currentSlide / 3) === idx ? "active" : ""
               }`}
               onClick={() => {
-                featuredSlider.current?.moveToSlideRelative(idx * 3);
-                thumbSlider.current?.moveToSlideRelative(idx * 3);
+                featuredSlider.current?.moveToIdx(idx * 3);
+                thumbSlider.current?.moveToIdx(idx * 3);
                 setCurrentSlide(idx * 3);
               }}
             />

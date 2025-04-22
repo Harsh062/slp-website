@@ -296,6 +296,12 @@ button.carousel-arrow:hover {
   color: var(--accent-color);
 }
 
+@media (min-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .courses-section {
   background-color: #f3faff;
   padding: 60px 16px;
