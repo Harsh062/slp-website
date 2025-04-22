@@ -30,18 +30,18 @@ export default function Header() {
         </button>
 
         <div className={`nav-items ${menuOpen ? "open" : ""}`}>
-          <a href="/results" onClick={() => setMenuOpen(false)}>
+          <Link href="/results" onClick={() => setMenuOpen(false)}>
             Results
-          </a>
-          <a href="/gallery" onClick={() => setMenuOpen(false)}>
+          </Link>
+          <Link href="/gallery" onClick={() => setMenuOpen(false)}>
             Gallery
-          </a>
-          <a href="/about-us" onClick={() => setMenuOpen(false)}>
+          </Link>
+          <Link href="/about-us" onClick={() => setMenuOpen(false)}>
             About Us
-          </a>
-          <a href="/contact" onClick={() => setMenuOpen(false)}>
+          </Link>
+          <Link href="/contact" onClick={() => setMenuOpen(false)}>
             Contact Us
-          </a>
+          </Link>
         </div>
       </nav>
     </header>

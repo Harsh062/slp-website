@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -23,16 +24,16 @@ const Footer = () => {
           <h4 className="footer-heading">Quick Links</h4>
           <ul className="footer-links">
             <li>
-              <a href="/results">Results</a>
+              <Link href="/results">Results</Link>
             </li>
             <li>
-              <a href="/gallery">Gallery</a>
+              <Link href="/gallery">Gallery</Link>
             </li>
             <li>
-              <a href="/about-us">About Us</a>
+              <Link href="/about-us">About Us</Link>
             </li>
             <li>
-              <a href="/contact">Contact Us</a>
+              <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>
