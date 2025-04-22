@@ -60,7 +60,7 @@ a {
   color: var(--accent-color);
 }
 
-button:not(.dot) {
+/* button:not(.dot) {
   background-color: var(--accent-color);
   color: #fff;
   border: none;
@@ -68,7 +68,7 @@ button:not(.dot) {
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-}
+} */
 
 .results-carousel {
   max-width: 900px;
@@ -183,6 +183,36 @@ button.carousel-arrow:hover {
 
   .nav-items a {
     flex: 0 0 auto;
+  }
+
+  .results-carousel {
+    padding: 0 16px; /* add spacing on left and right */
+  }
+
+  .carousel-arrow {
+    display: none;
+  }
+
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .carousel-dot.active,
+  .carousel-dot:hover {
+    background-color: var(--primary-color);
   }
 }
 

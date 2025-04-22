@@ -49,6 +49,16 @@ const ResultsCarousel = () => {
         ))}
       </div>
 
+      <div className="carousel-dots">
+        {images.map((_, idx) => (
+          <button
+            key={idx}
+            className={`carousel-dot ${currentSlide === idx ? "active" : ""}`}
+            onClick={() => instanceRef.current?.moveToSlideRelative(idx)}
+          />
+        ))}
+      </div>
+
       {/* Arrows on sides */}
       <button
         onClick={() => instanceRef.current?.prev()}
