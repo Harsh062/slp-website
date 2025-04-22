@@ -42,7 +42,7 @@ const usps = [
     icon: <FaLightbulb size={24} color="#00b8b0" />,
     title: "Doubt Clearing System",
     points: [
-      "1-on-1 sessions with subject experts",
+      "1:1 sessions with subject experts",
       "Quick resolution for doubts",
     ],
   },

@@ -36,6 +36,9 @@ export default function Header() {
           <Link href="/gallery" onClick={() => setMenuOpen(false)}>
             Gallery
           </Link>
+          <Link href="/our-team" onClick={() => setMenuOpen(false)}>
+            Our Team
+          </Link>
           <Link href="/about-us" onClick={() => setMenuOpen(false)}>
             About Us
           </Link>
