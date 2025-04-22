@@ -37,14 +37,16 @@ const ResultsCarousel = () => {
       <div ref={sliderRef} className="keen-slider">
         {images.map((src, index) => (
           <div className="keen-slider__slide" key={index}>
-            <Image
-              src={`/results/${src}`}
-              alt={`Result ${index + 1}`}
-              width={1000}
-              height={600}
-              style={{ width: "100%", height: "auto", borderRadius: "10px" }}
-              priority={index === 0}
-            />
+            <div className="carousel-slide">
+              <Image
+                src={`/results/${src}`}
+                alt={`Result ${index + 1}`}
+                width={1000}
+                height={600}
+                style={{ width: "100%", height: "auto", borderRadius: "10px" }}
+                priority={index === 0}
+              />
+            </div>
           </div>
         ))}
       </div>
@@ -54,7 +56,7 @@ const ResultsCarousel = () => {
           <button
             key={idx}
             className={`carousel-dot ${currentSlide === idx ? "active" : ""}`}
-            onClick={() => instanceRef.current?.moveToSlideRelative(idx)}
+            onClick={() => instanceRef.current?.moveToIdx(idx)}
           />
         ))}
       </div>

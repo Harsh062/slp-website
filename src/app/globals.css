@@ -173,6 +173,15 @@ button.carousel-arrow:hover {
   color: #444;
 }
 
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px; /* adjust as needed based on tallest image */
+  background-color: #fff; /* optional for white padding effect */
+  padding: 8px; /* optional if you want spacing around the image */
+}
+
 /* Responsive: Collapse into column on smaller screens */
 @media (max-width: 768px) {
   .nav-items {
@@ -213,6 +222,10 @@ button.carousel-arrow:hover {
   .carousel-dot.active,
   .carousel-dot:hover {
     background-color: var(--primary-color);
+  }
+
+  .carousel-dot:not(.active) {
+    background-color: #ccc !important; /* explicitly reset */
   }
 }
 
