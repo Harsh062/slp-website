@@ -51,6 +51,7 @@ const testimonials = [
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [expandedIndexes, setExpandedIndexes] = useState([]);
 
   const [featuredRef, featuredSlider] = useKeenSlider({
     loop: true,
@@ -60,6 +61,12 @@ const Testimonials = () => {
       setCurrentSlide(slider.track.details.rel);
     },
   });
+
+  const toggleExpanded = (index) => {
+    setExpandedIndexes((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
+    );
+  };
 
   const [thumbRef, thumbSlider] = useKeenSlider({
     loop: true,
@@ -79,6 +86,10 @@ const Testimonials = () => {
 
   return (
     <section className="testimonials-section">
+      <h2 className="testimonial-heading">
+        <span className="highlighted-word">Our Pride,</span> Their Stories
+      </h2>
+
       {/* Featured Testimonial */}
       <div ref={featuredRef} className="keen-slider featured-slider">
         {testimonials.map((t, index) => (
@@ -90,18 +101,68 @@ const Testimonials = () => {
               height={150}
               className="testimonial-photo"
             />
-            <div className="testimonial-quote">“</div>
-            <p className="testimonial-text">{t.text}</p>
+            <div className="testimonial-quote">&#8220;</div>
+
+            <p
+              className={`testimonial-text ${
+                expandedIndexes.includes(index) ? "expanded" : ""
+              }`}
+            >
+              {expandedIndexes.includes(index)
+                ? t.text
+                : t.text.slice(0, 140) + (t.text.length > 140 ? "..." : "")}
+            </p>
+            {t.text.length > 140 && (
+              <button
+                className="read-more-toggle"
+                onClick={() => toggleExpanded(index)}
+              >
+                {expandedIndexes.includes(index) ? "Read Less" : "Read More"}
+              </button>
+            )}
+
             <p className="testimonial-name">{t.name}</p>
             <p className="testimonial-course">{t.course}</p>
           </div>
         ))}
       </div>
-      {/* Mobile Arrows */}
       <div className="mobile-arrows">
-        <button onClick={() => featuredSlider.current?.prev()}>&larr;</button>
-        <button onClick={() => featuredSlider.current?.next()}>&rarr;</button>
+        <button onClick={() => featuredSlider.current?.prev()}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+            stroke="currentColor"
+            width="20"
+            height="20"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button onClick={() => featuredSlider.current?.next()}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+            stroke="currentColor"
+            width="20"
+            height="20"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
       </div>
+
       <div className="testimonial-thumbnails">
         {/* Thumbnails Carousel (Bottom) */}
         <div ref={thumbRef} className="keen-slider testimonial-grid">
