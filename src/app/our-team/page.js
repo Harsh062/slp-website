@@ -5,6 +5,17 @@ import Image from "next/image";
 
 const teamMembers = [
   {
+    name: "Nishant Gandhi Sir",
+    role: "Founder, Mentor – Maths & Physics",
+    image: "/team/nishant_gandhi.jpeg",
+    bio: `If there’s one person who can turn the fear of Maths and Physics into fascination, it’s Nishant Sir. A dynamic educator with a sharp mind and sharper chalk, he doesn’t just teach — he transforms the way students think. With over a decade of experience, his classes are the perfect blend of logic, laughter, and life lessons.
+
+Whether it's a tricky integral or a mind-bending kinematics problem, he has a knack for breaking it down with real-life analogies and infectious energy. Students call him the “Human Calculator,” but he prefers being known as the guy who made Physics fun and Maths magical.
+
+At the core of it all? His unwavering belief: “If taught right, every student can fall in love with learning.”
+And thousands already have.`,
+  },
+  {
     name: "Dr. Kedar Pande Sir",
     role: "The Chemistry King",
     image: "/team/kedar_pande.png",

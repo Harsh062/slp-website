@@ -14,8 +14,8 @@ const About = () => {
             <em>“Nurturing Talent. Transforming Futures.”</em>
           </h3>
           <p>
-            Stimulus Learning Point was founded with a singular mission — to
-            make quality coaching accessible to every deserving student in
+            Stimulus Learning Point was founded in 2012 with a singular mission
+            — to make quality coaching accessible to every deserving student in
             Vidarbha. With a strong focus on individual attention and small
             batch sizes, SLP has consistently helped students achieve top ranks
             in exams like JEE, NEET, MHT-CET, and SSC.
