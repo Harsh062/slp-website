@@ -24,6 +24,7 @@ const ResultsCarousel = () => {
     return () => clearInterval(interval);
   }, [instanceRef]);
   const images = [
+    "result13.jpg",
     "result1.jpeg",
     "result2.jpeg",
     "result3.jpeg",

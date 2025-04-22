@@ -6,6 +6,10 @@ import "./results.css"; // create this if you want to scope styling
 const resultImages = [
   {
     name: "Result Image",
+    imgSrc: "result13.jpg",
+  },
+  {
+    name: "Result Image",
     imgSrc: "result1.jpeg",
   },
   {
@@ -44,12 +48,31 @@ const resultImages = [
     name: "Result Image",
     imgSrc: "result10.jpeg",
   },
+  {
+    name: "Result Image",
+    imgSrc: "result14.jpg",
+  },
 ];
 
 export default function ResultsPage() {
   return (
     <section className="results-section">
       <h1 className="results-heading">Our Star Performers</h1>
+
+      {/* Banner Image inside same section wrapper */}
+      <div className="banner-wrapper">
+        <div className="banner-container">
+          <Image
+            src={`/results/result15.jpg`}
+            alt="Banner Result"
+            width={1000}
+            height={400}
+            className="banner-image"
+            priority
+          />
+        </div>
+      </div>
+
       <div className="results-grid">
         {resultImages.map((img, index) => (
           <div className="result-card" key={index}>

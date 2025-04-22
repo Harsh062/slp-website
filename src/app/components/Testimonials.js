@@ -8,7 +8,7 @@ const testimonials = [
   {
     name: "Sanika Hatekar",
     course: "JEE 2024 (IIT Roorkee)",
-    image: "/testimonials/sanika_hatekar.png",
+    image: "/testimonials/sanika_hatekar.jpeg",
     text: "Stimulus Learning Point played a pivotal role in my IIT JEE journey. The faculty is exceptionally supportive and ensures that every concept is crystal clear. The personalized attention, structured study material, and regular motivation kept me focused and confident throughout. Highly recommended for serious JEE aspirants!",
   },
   {
@@ -38,13 +38,13 @@ const testimonials = [
   {
     name: "Mahavir Chaudhary",
     course: "BITSAT 2019 (BITS Pilani)",
-    image: "/testimonials/mahavir_chaudhary.png",
+    image: "/testimonials/mahavir_chaudhary_1.png",
     text: "Good place, great teachers!",
   },
   {
     name: "Soham Kolte",
     course: "MHT-CET 2023 (VIIT Pune)",
-    image: "/testimonials/soham_kolte.png",
+    image: "/testimonials/soham_kolte.jpeg",
     text: "SLP Coaching Institute has been an absolute game-changer for me.The faculty's unwavering support and personalized guidance have instilled a newfound confidence within me. SLP goes beyond just imparting knowledge; it creates a family-like environment where dreams are nurtured and aspirations take flight. Forever grateful for this life-changing experience!Btw my MHT-CET PCM score is 98.66%ile",
   },
 ];
