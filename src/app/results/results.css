@@ -55,3 +55,14 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .result-card img {
+    height: auto; /* Let height be based on image aspect ratio */
+    object-fit: contain; /* Ensure full image is shown */
+  }
+
+  .result-card {
+    width: 100%; /* Let card take full width on mobile */
+  }
+}
