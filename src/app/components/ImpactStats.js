@@ -42,8 +42,8 @@ const stats = [
     ),
   },
   {
-    title: "10+",
-    subtitle: "IIT / BITS / GMC Alumni",
+    title: "20+",
+    subtitle: "IIT / BITS / GMC / Top College Admits",
     logo: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -61,15 +61,37 @@ const stats = [
       </svg>
     ),
   },
+  {
+    title: "100%",
+    subtitle: "Student Satisfaction",
+    logo: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="size-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15.59 14.37a4.5 4.5 0 0 1-7.18 0m-1.34-5.12h.008v.008H7.07V9.25zm10 0h.008v.008h-.008V9.25zM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+        />
+      </svg>
+    ),
+  },
 ];
 
 const ImpactStats = () => {
   return (
     <section className="impact-section">
       <h2 className="impact-heading">
-        Vidarbha’s Leading Coaching Institute Transforming Futures
+        <span className="highlighted-word">Vidarbha’s</span> Leading Coaching
+        Institute Transforming Futures
       </h2>
-      <div className="impact-grid">
+
+      <div className="stats-grid">
         {stats.map((stat, index) => (
           <div className="impact-card" key={index}>
             <div className="impact-icon">{stat.logo}</div>
