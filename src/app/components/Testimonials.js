@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "Garima Rathi",
     course: "NEET 2023 (GMC Nagpur)",
-    image: "/testimonials/garima_rathi.png",
+    image: "/testimonials/garima_rathi.jpeg",
     text: "Bestt placee to preparing for school or highschool..I myself was associated with the institute from my 8th class and even did my NEET preparation from SLP.. During my NEET preparation all the teaching as well as non teaching staff helped me a lot..the way they supported me and motivated me is the reason I cracked my NEET-UG in first attempt with 655 marks and got admission in GMC Nagpur…..Weekly test , continuous guidance by teachers and personal attention of teachers on my progress helped me a lot !!I am grateful to all the teachers and other staff members !!!",
   },
   {
