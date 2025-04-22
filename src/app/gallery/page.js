@@ -3,6 +3,12 @@
 import Image from "next/image";
 import "./gallery.css"; // create this if you want to scope styling
 
+export const metadata = {
+  title: "Gallery – Student Life at Stimulus Learning Point",
+  description:
+    "Explore photos and glimpses of our vibrant student life, achievements, events and classroom moments at Stimulus Learning Point.",
+};
+
 const resultImages = [
   {
     name: "Gallery Image",

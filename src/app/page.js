@@ -15,3 +15,9 @@ export default function Home() {
     </main>
   );
 }
+
+export const metadata = {
+  title: "Stimulus Learning Point – Coaching Institute in Khamgaon",
+  description:
+    "Join Stimulus Learning Point, the top-rated institute in Vidarbha for JEE, NEET, and MHT-CET. Proven results, expert faculty, and student-first approach.",
+};
