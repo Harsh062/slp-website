@@ -95,6 +95,15 @@ At Stimulus, we are proud to have Irfan Khan Sir on board—mentoring students w
   },
 
   {
+    name: "Shruti Rathi Mam",
+    role: "Biology & Chemistry Expert | Student Favorite",
+    image: "/team/shruti_rathi.jpg",
+    bio: `With a deep passion for teaching and a knack for simplifying complex concepts, Shruti Rathi Ma’am has been guiding students with excellence in Biology and Chemistry for years. Her engaging style, personal attention to each student, and real-life connect with science make her one of the most loved and respected teachers among students.
+
+Whether it’s preparing for board exams or laying the foundation for competitive entrances, Shruti Ma’am ensures every student not only understands the subject but also enjoys learning it!`,
+  },
+
+  {
     name: "Asmita Thakur Mam",
     role: "The Heart of Our Back Office",
     image: "/team/asmita_thakur.jpg",
