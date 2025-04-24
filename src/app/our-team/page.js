@@ -104,6 +104,17 @@ Whether it’s preparing for board exams or laying the foundation for competitiv
   },
 
   {
+    name: "Sakshi Deshmukh Mam",
+    role: "Science Expert",
+    image: "/team/sakshi_deshmukh.jpeg",
+    bio: `We’re proud to introduce Sakshi Deshmukh Mam, a motivated Biochemistry graduate with both MSc and BSc degrees. She brings with her a solid foundation in molecular biology, bioinformatics, and advanced instrumentation.
+
+With strong leadership skills, effective communication, and practical project experience, Sakshi Mam is passionate about simplifying complex scientific concepts for students and inspiring curiosity in young minds.
+
+She’s eager to contribute to academic excellence and grow with our dynamic team. Let’s give her a warm welcome to the Stimulus Learning Point family!`,
+  },
+
+  {
     name: "Asmita Thakur Mam",
     role: "The Heart of Our Back Office",
     image: "/team/asmita_thakur.jpg",
