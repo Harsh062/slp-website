@@ -113,7 +113,17 @@ With strong leadership skills, effective communication, and practical project ex
 
 She’s eager to contribute to academic excellence and grow with our dynamic team. Let’s give her a warm welcome to the Stimulus Learning Point family!`,
   },
+  {
+    name: "Nilesh Bajaj Sir",
+    role: "Coding Expert 💻",
+    image: "/team/nilesh_bajaj.jpeg",
+    bio: `We’re thrilled to welcome Nilesh Bajaj Sir to the Stimulus Learning Point family!
+With 13+ years of experience in the field of Computer Science & Coding, he brings unmatched expertise in programming, logic building, algorithms, and modern tech trends.
 
+Known for his student-friendly approach and innovative teaching techniques, Nilesh Sir is all set to make coding fun, clear, and career-building for our students!
+
+Let’s give a warm welcome to our Coding Champion!`,
+  },
   {
     name: "Asmita Thakur Mam",
     role: "The Heart of Our Back Office",
