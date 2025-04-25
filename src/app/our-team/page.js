@@ -42,7 +42,7 @@ Behind every great result, there’s a great mentor. At Stimulus, we’re proud 
   {
     name: "Chandan Bhattad Sir",
     role: "The Mathematics Wizard & Mechanical Engineer",
-    image: "/team/chandan_bhattad.jpeg",
+    image: "/team/chandan_bhattad_1.jpeg",
     bio: `With over 10 years of teaching experience and endless dedication, Chandan Bhattad Sir is a celebrated Mathematics educator at Stimulus Learning Point. Holding a background in Mechanical Engineering, he brings a unique perspective to his teaching, ensuring that students not only learn the concepts but also understand their real-world applications.
 
 Known for his exceptional ability to build a solid foundation from basic to advanced levels, Chandan Sir specializes in guiding students from classes 8, 9, and 10 through their journey in Mathematics. His approach simplifies even the most complex topics, making them accessible and engaging. His dedication ensures students grasp core concepts and develop the confidence to tackle advanced problems.
